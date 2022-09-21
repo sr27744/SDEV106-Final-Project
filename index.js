@@ -6,11 +6,14 @@ form.addEventListener("submit", function (e) {
     const email = document.getElementById("email");
     if(firstName.value == "" || lastName.value == "" || email.value == ""){
         showValidationText();
-        alert("Please fill in all available fields");
+        alert("Please fill in all required fields");
         e.preventDefault();
         return false;
+    } else {
+        alert("Thank you");
     }
-    return true;
+    
+    
 })
 
 
@@ -22,6 +25,8 @@ function showValidationText(){
     validationText2.textContent = "Required field";
     validationText3.textContent = "Required field";
 }
+
+
 
 
 
