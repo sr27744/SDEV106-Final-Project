@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #f0ECE1;
+    height: 100vh;
+}
+
+.home-body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/giraffebackground.jpg");
+    
+}
+
+
+
+.home-main {
+    text-align: center;
+    color: rgb(0,0,0);
+}
+
+.navbar{
+    display: flex;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-link {
+    padding: 1rem;
+    color: #6F4A38;
+}
+
+.menu-link:hover {
+    background-color: #edcf8f;
+    color: #f0ECE1;
+}
+
+
+
+
+
+
+.main-logo {
+    width: auto;
+    height: 50px;
+    padding: inherit;
+}
+
+.main-header {
+    margin-top: 14rem;
+    font-size: 3rem;
+    
+}
+
+.supporting{
+    font-size: 1.5rem;
+}
+
+.learn-more{
+    padding: .5rem 1rem;
+    margin-top: 4rem;
+    border: none;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+    box-shadow: 8px 13px 24px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 13px 32px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 13px 24px -13px rgba(0,0,0,0.75);
+    cursor: pointer;
+    background-color: #edcf8f;
+    color: #f0ECE1;
+}
+
+.learn-more:hover{
+    background-color: #6F4A38;
+}
+
+
+/* About section */
+
+
+.about-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-main{
+    margin-top: 2rem;
+}
+
+aside{
+    width: 25%;
+    border: 2px solid #edcf8f;
+    background-color: #edcf8f;
+    margin-top: 2em;
+    margin-right: 1.5em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+ul{
+    margin: 1rem;
+}
+
+li {
+    list-style-type: none;
+    padding: .25rem;
+}
+
+
+.about-giraffe{
+    width: 15rem;
+    margin: 1rem 2rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+/* end of about */
+
+/* beginning of random picture generator */
+
+
+.picture-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.picture-grid{
+    display:grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 3 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.pic{
+    width: 100%;
+}
+
+.pic1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.pic2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.pic3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pic4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.pic5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.pic6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.pic7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.pic8 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.pic9 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+/* contact us start */
+
+.form-container{
+    width: 25%;
+    margin: 7rem auto;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 10px 10px 26px 0px rgba(106, 106, 106, 0.39);
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(106, 106, 106, 0.39);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(106, 106, 106, 0.39);
+}
+
+
+
+.form-control input{
+    width: 100%;
+    font-size: 1.25rem;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+.submit-button{
+    width: 100%;
+    border: none;
+    background-color: #edcf8f;
+    color: #6F4A38;
+    margin-top: 1rem;
+    padding: .75rem;
+    box-shadow: rgba(106, 106, 106, 0.39) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.validation1, .validation2, .validation3{
+    font-size: 0.5rem;
+    color:red;
+}
